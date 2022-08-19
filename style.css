@@ -19,6 +19,7 @@ body {
 }
 
 .container {
+    margin: auto;
     position: relative;
     background-color: #2f363e;
     /*min-height: 500px;*/
