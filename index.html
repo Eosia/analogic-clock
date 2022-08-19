@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Analogic clock</title>
+    <title>Clock</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" 
@@ -17,12 +16,13 @@
     
     <!--container-->
     <div class="container">
-        <!--clock-->
+
+        <!--analog clock-->
         <div class="clock">
 
-            <div class="circle"><i></i></div>
-            <div class="circle circle2"><i></i></div>
-            <div class="circle circle3"><i></i></div>
+            <div class="circle" id="sc" style="--clr: #04fc43;"><i></i></div>
+            <div class="circle circle2" id="mn" style="--clr: #fee800;"><i></i></div>
+            <div class="circle circle3" id="hr" style="--clr: #ff2972;"><i></i></div>
 
             <span style="--1:1;"><b>1</b></span>
             <span style="--1:2;"><b>2</b></span>
@@ -37,10 +37,22 @@
             <span style="--1:11;"><b>11</b></span>
             <span style="--1:12;"><b>12</b></span>
         </div>
-        <!--clock/-->
+        <!--analog clock/-->
+
+        <!--Digital clock-->
+        <div id="time">
+            <div id="hour" style="--clr: #ff2972;">00</div>
+            <div id="minutes" style="--clr: #fee800;">00</div>
+            <div id="seconds" style="--clr: #04fc43;">00</div>
+            <div id="ampm">AM</div>
+        </div>
+        <!--Digital clock/-->
+
     </div>
     <!--container/-->
 
-
+    <!--import script-->
+    <script src="script.js"></script>
+    <!--import script/-->
 </body>
 </html>
